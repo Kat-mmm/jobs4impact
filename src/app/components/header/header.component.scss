@@ -1,0 +1,84 @@
+.header-cont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    overflow: hidden;
+    
+    .left{
+        position: relative;
+        display: grid;
+        overflow: hidden;
+        
+        .tl{
+            object-fit: cover;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 10%;
+            left: 0;
+            z-index: 0;
+        }
+
+        .content{
+            z-index: 50;
+            width: 70%;
+            justify-self: flex-end;
+            align-self: center;
+            margin-top: 3rem;
+            display: grid;
+            gap: 0.5rem;
+
+            h1{
+                width: 100%;
+                font-family: 'Inter';
+
+                span{
+                    font-style: italic;
+                    font-weight: 900;
+                    
+                }
+            }
+
+            p{
+                font-size: medium;
+            }
+
+            a{
+                width: fit-content;
+                padding: 8px 30px;
+                background-color: #32cd32;
+                color: white;
+                border-radius: 15px;
+                text-decoration: none;
+                font-family: 'Inter';
+                font-weight: 200px;
+            }
+        }
+
+        .bl{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 350px;
+            height: 300px;
+            margin-left: -100px;
+            margin-bottom: -120px;
+            object-fit: cover;
+            z-index: 20;
+        }
+    }
+
+    .right{
+        display: flex;
+        justify-content: center;
+
+        img{
+            height: 450px;
+            object-fit: cover;
+        }
+    }
+}
+
+// *{
+//     border: 1px solid red;
+// }
