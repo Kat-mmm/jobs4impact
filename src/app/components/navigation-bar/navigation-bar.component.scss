@@ -4,6 +4,10 @@
     align-items: center;
     height: 100px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 999999;
 
     a {
         img {
