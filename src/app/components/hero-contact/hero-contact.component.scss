@@ -1,0 +1,46 @@
+.hero-services-cont {
+    position: relative; /* To allow the overlay to be positioned correctly */
+    width: 100%;
+    height: 46vh;
+    margin-top: 100px;
+    background-image: url('../../../assets/call.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    margin-bottom: 70px;
+
+    /* Adding dark overlay */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* 50% opacity overlay */
+        z-index: 1; /* Below text but above background */
+    }
+
+    /* Make sure your text content is positioned above the overlay */
+    .text-content {
+        position: relative; /* Make sure text appears above the overlay */
+        z-index: 2;
+        color: #fff; /* White text to stand out */
+        padding: 20px;
+        text-align: center;
+
+        h1{
+            font-size: 2rem;
+        }
+
+        p{
+            font-size: small;
+
+            span{
+                color: #32cd32;
+            }
+        }
+    }
+}

@@ -12,6 +12,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SubContactComponent } from './components/sub-contact/sub-contact.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { HeroServicesComponent } from './components/hero-services/hero-services.component';
+import { MainServicesComponent } from './components/main-services/main-services.component';
+import { MainContactComponent } from './components/main-contact/main-contact.component';
+import { HeroContactComponent } from './components/hero-contact/hero-contact.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { ContactComponent } from './pages/contact/contact.component';
     FooterComponent,
     SubContactComponent,
     ServicesComponent,
-    ContactComponent
+    ContactComponent,
+    HeroServicesComponent,
+    MainServicesComponent,
+    MainContactComponent,
+    HeroContactComponent,
   ],
   imports: [
     BrowserModule,

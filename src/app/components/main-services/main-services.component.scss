@@ -1,0 +1,113 @@
+.main-services-cont {
+    background-color: #f9f9f9;
+    width: 100%;
+    margin-bottom: -30px;
+
+    h6{
+        text-align: center;
+        font-weight: 100;
+        font-size: large;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+        width: 100%;
+        padding: 0 3rem;
+    }
+
+    .categories {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 80px;
+
+        .cat1{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            width: 100%;
+            height: fit-content;
+            background-color: #edede9;
+            
+            .left{
+
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .right{
+                margin-left: 4rem;
+                margin-top: 3rem;
+
+                h1{
+                    font-size: 1.8rem;
+                    width: 97%;
+                }
+
+                p{
+                    width: 90%;
+                }
+
+                ul {
+                    display: grid;
+                    grid-template-columns: 40% 60%;
+                    padding-left: 0; /* Removes default padding */
+                  
+                    li {
+                      list-style-type: none; /* Remove default bullets */
+                      position: relative; /* Needed for ::before positioning */
+                      padding-left: 20px; /* Space for the green tick */
+                  
+                      &::before {
+                        content: '\2713'; /* Unicode for checkmark */
+                        color: #32cd32; /* Green tick color */
+                        position: absolute;
+                        left: 0; /* Align tick to the left */
+                      }
+                    }
+                  }
+                  
+            }
+        }
+
+        .cat2{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            width: 100%;
+            height: fit-content;
+            background-color: #edede9;
+            
+            .left{
+                margin-left: 4rem;
+                margin-top: 3rem;
+
+                h1{
+                    font-size: 1.8rem;
+                    width: 97%;
+                }
+
+                p{
+                    width: 90%;
+                }
+            }
+
+            .right{
+                width: 100%;
+
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .last{
+            grid-template-columns: 30% 70%;
+
+            .left{
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
