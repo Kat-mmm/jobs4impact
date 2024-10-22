@@ -8,7 +8,7 @@
 
     .top {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
         gap: 1rem;
         width: 100%;
         place-items: center;
@@ -58,8 +58,10 @@
 
                 li {
                     margin: 5px 0;
-                    i {
-                        margin-right: 10px;
+                    
+                    a{
+                        text-decoration: none;
+                        color: white;
                     }
                 }
             }

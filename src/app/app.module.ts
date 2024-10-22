@@ -16,6 +16,10 @@ import { HeroServicesComponent } from './components/hero-services/hero-services.
 import { MainServicesComponent } from './components/main-services/main-services.component';
 import { MainContactComponent } from './components/main-contact/main-contact.component';
 import { HeroContactComponent } from './components/hero-contact/hero-contact.component';
+import { NewAboutComponent } from './components/new-about/new-about.component';
+import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
+import { HeroAboutComponent } from './components/hero-about/hero-about.component';
+import { AboutMainComponent } from './components/about-main/about-main.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +37,10 @@ import { HeroContactComponent } from './components/hero-contact/hero-contact.com
     MainServicesComponent,
     MainContactComponent,
     HeroContactComponent,
+    NewAboutComponent,
+    AboutUsPageComponent,
+    HeroAboutComponent,
+    AboutMainComponent,
   ],
   imports: [
     BrowserModule,
