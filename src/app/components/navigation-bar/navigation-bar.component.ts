@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation-bar.component.scss']
 })
 export class NavigationBarComponent {
+  isMenuOpen = false; // Track the state of the menu
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen; // Toggle the menu open/close
+  }
 }

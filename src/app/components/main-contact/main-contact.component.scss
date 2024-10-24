@@ -145,6 +145,33 @@
             }
         }
     }
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+
+        .left{
+            width: 100%;
+
+            form, .hs{
+                width: 90%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .right{
+            width: 100%;
+
+            .contact-cont{
+                width: 90%;
+            }
+        }
+        
+    }
+
 }
 
 // *{

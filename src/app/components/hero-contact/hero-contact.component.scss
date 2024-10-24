@@ -43,4 +43,10 @@
             }
         }
     }
+
+    @media (max-width: 768px) {
+        height: 20vh;
+        margin-bottom: 3rem;
+    }
+
 }

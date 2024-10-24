@@ -76,6 +76,27 @@
         }
     }
 
+    @media (max-width: 768px) {
+
+        .we-do{
+            width: 90%;
+
+            .box{
+                padding: 6px;
+
+                h5{
+                    font-weight: 900;
+                    align-self: flex-start;
+                    font-size: 1.8rem;
+                }
+
+                p{
+                    font-size: smaller;
+                    margin-top: 1rem;
+                }
+            }
+        }  
+    }
 
 
 

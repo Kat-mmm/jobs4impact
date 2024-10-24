@@ -36,8 +36,6 @@
         font-size: 1.5rem;
     }
 
-    
-
     .right {
         width: 20%;
         padding: 15px;
@@ -54,6 +52,19 @@
             &:hover {
                 background-color: #2e9e2e; /* Slightly darker green on hover */
             }
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: fit-content;
+
+        .left{
+            width: 90%;
+            font-size: 1.5rem;
+        }
+
+        .right{
+            width: 80%;
         }
     }
 }

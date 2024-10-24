@@ -1,11 +1,19 @@
 <div class="navigation-cont">
     <a href="">
-        <img src="../../../assets/logo.PNG" alt="logo">
+      <img src="../../../assets/logo.PNG" alt="logo" />
     </a>
-    <ul>
-        <a routerLink="/"><li>Home</li></a>
-        <a routerLink="/about-us"><li>About Us</li></a>
-        <a routerLink="/services"><li>Services</li></a>
-        <a routerLink="/contact"><li>Contact Us</li></a>
+  
+    <!-- Hamburger button -->
+    <button class="hamburger" (click)="toggleMenu()">
+      &#9776; <!-- Hamburger icon -->
+    </button>
+  
+    <!-- Navigation menu -->
+    <ul [class.open]="isMenuOpen">
+      <a routerLink="/"><li>Home</li></a>
+      <a routerLink="/about-us"><li>About Us</li></a>
+      <a routerLink="/services"><li>Services</li></a>
+      <a routerLink="/contact"><li>Contact Us</li></a>
     </ul>
-</div>
+  </div>
+  
