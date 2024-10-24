@@ -79,7 +79,7 @@
             grid-template-columns: 60% 40%;
             width: 100%;
             height: fit-content;
-            background-color: #edede9;
+            background-color: #fffff5;
             
             .left{
                 margin-left: 4rem;
@@ -113,6 +113,103 @@
                     height: 100%;
                 }
             }
+
         }
     }
+
+    @media (max-width: 768px) {
+
+        .categories{
+
+            .cat1, .cat2{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cat1{
+
+                padding-top: 2rem;
+
+                .left{
+                    display: grid;
+                    place-items: center;
+                    width: 100%;
+
+                    img{
+                        width: 86%;
+                        height: 300px;
+                    }
+                }
+
+                .right{
+                    display: grid;
+                    place-items: center;
+                    margin: 0;
+                    width: 85%;
+
+                    h1{
+                        font-size: 1.6rem;
+                        width: 85%;
+                        margin-top: 1.5rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    p{
+                        width: 85%;
+                    }
+
+                    ul{
+                        width: 85%;
+                        grid-template-columns: 1fr 2fr;
+                        gap: 1rem;
+                    }
+
+                    .for-who{
+                        display: flex;
+                        flex-direction: column;
+                        width: 85%;
+
+                        .indi, .comps{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+
+                            h3{
+                                align-self: flex-start;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .cat2{
+
+                .mid-img{
+                    display: none;
+                }
+
+                .left{
+                    display: grid;
+                    place-items: center;
+                    margin: 0;
+                    width: 85%;
+
+                    h1{
+                        font-size: 1.6rem;
+                        width: 85%;
+                        margin-top: 1.5rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    p{
+                        width: 85%;
+                    }
+                }
+            }
+
+            
+        }
+    }
+
 }
