@@ -59,11 +59,13 @@
         border: none;
         cursor: pointer;
         margin-right: 2rem;
+        color: black;
     }
 
     @media (max-width: 768px) {
         .hamburger {
             display: block;
+            color: black;
         }
 
         ul {

@@ -5,8 +5,9 @@
 
     h3{
         text-align: center;
-        margin-top: 3rem;
+        padding-top: 3rem;
         margin-bottom: 1.5rem;
+
     }
 
     h6{
@@ -23,6 +24,7 @@
         flex-direction: column;
         width: 100%;
         margin-top: 80px;
+        overflow-x: hidden;
 
         .cat1{
             display: grid;
@@ -32,10 +34,13 @@
             background-color: #edede9;
             
             .left{
+                display: flex;
+                align-items: stretch;
 
                 img{
                     width: 100%;
-                    object-fit: cover;
+                    height: 100%; /* Ensure the image takes the full height of the container */
+                    object-fit: cover; /* Maintain the image aspect ratio */
                 }
             }
 
@@ -70,6 +75,12 @@
                       }
                     }
                   }
+
+                .indi, .comps{
+                    h3{
+                        text-align: left;
+                    }
+                }
                   
             }
         }
@@ -79,7 +90,7 @@
             grid-template-columns: 60% 40%;
             width: 100%;
             height: fit-content;
-            background-color: #fffff5;
+            background-color: #f9f9f9;
             
             .left{
                 margin-left: 4rem;
@@ -145,21 +156,21 @@
                     display: grid;
                     place-items: center;
                     margin: 0;
-                    width: 85%;
+                    width: 100%;
 
                     h1{
                         font-size: 1.6rem;
-                        width: 85%;
+                        width: 90%;
                         margin-top: 1.5rem;
                         margin-bottom: 1rem;
                     }
 
                     p{
-                        width: 85%;
+                        width: 90%;
                     }
 
                     ul{
-                        width: 85%;
+                        width: 90%;
                         grid-template-columns: 1fr 2fr;
                         gap: 1rem;
                     }
@@ -167,7 +178,7 @@
                     .for-who{
                         display: flex;
                         flex-direction: column;
-                        width: 85%;
+                        width: 90%;
 
                         .indi, .comps{
                             width: 100%;
@@ -213,3 +224,7 @@
     }
 
 }
+
+// *{
+//     border: 1px solid red;
+// }
