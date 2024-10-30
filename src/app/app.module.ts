@@ -20,6 +20,7 @@ import { NewAboutComponent } from './components/new-about/new-about.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
 import { HeroAboutComponent } from './components/hero-about/hero-about.component';
 import { AboutMainComponent } from './components/about-main/about-main.component';
+import { CtaComponent } from './components/cta/cta.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { AboutMainComponent } from './components/about-main/about-main.component
     AboutUsPageComponent,
     HeroAboutComponent,
     AboutMainComponent,
+    CtaComponent,
   ],
   imports: [
     BrowserModule,

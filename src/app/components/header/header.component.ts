@@ -1,10 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+
+declare var bootstrap: any;
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit {
 
+  ngAfterViewInit(): void {
+    const carouselElement = document.getElementById('carouselExampleIndicators');
+    if (carouselElement) {
+      new bootstrap.Carousel(carouselElement, {
+        interval: 5000, // 5 seconds
+        ride: 'carousel'
+      });
+    }
+  }
 }
