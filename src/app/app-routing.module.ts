@@ -4,13 +4,14 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { ContactComponent } from './pages/contact/contact.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
+import { InformationHubComponent } from './pages/information-hub/information-hub.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'about-us', component: AboutUsPageComponent },
-
+  { path: 'information-hub', component: InformationHubComponent },
 ];
 
 @NgModule({

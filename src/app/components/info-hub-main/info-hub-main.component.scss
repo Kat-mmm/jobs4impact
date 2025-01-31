@@ -1,0 +1,30 @@
+.info-hub-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .info-hub-info{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .info-hd{
+            align-self: center;
+            width: fit-content;
+
+            h1{
+                color: #32cd32;
+            }
+
+            p{
+                text-align: center;
+            }
+        }
+
+        p{
+
+        }
+    }
+}

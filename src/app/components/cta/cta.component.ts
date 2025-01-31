@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class CtaComponent {
 
+
+  openDoc(): void {
+    const url = 'https://forms.gle/62LESWGTqBirKCvg9';
+    window.open(url, '_blank');
+  }
+
 }
