@@ -24,7 +24,27 @@
         }
 
         p{
+            text-align: left;
+        }
 
+        .speak{
+            background-color: #efcc0a;
+            color: white;
+            width: fit-content;
+            height: fit-content;
+            border: none;
+            padding: 5px 20px;
+            border-radius: 16px;
+            align-self: center;
+            justify-self: flex-end;
+            margin-left: 20px;
+
+            span{
+
+                a{
+                    color: white;
+                }
+            }
         }
     }
 }
