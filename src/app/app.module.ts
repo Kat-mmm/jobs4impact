@@ -24,6 +24,9 @@ import { CtaComponent } from './components/cta/cta.component';
 import { InformationHubComponent } from './pages/information-hub/information-hub.component';
 import { HeroInfoHubComponent } from './components/hero-info-hub/hero-info-hub.component';
 import { InfoHubMainComponent } from './components/info-hub-main/info-hub-main.component';
+import { PackagesComponent } from './pages/packages/packages.component';
+import { PackagesMainComponent } from './components/packages-main/packages-main.component';
+import { HeroPackagesComponent } from './components/hero-packages/hero-packages.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +52,9 @@ import { InfoHubMainComponent } from './components/info-hub-main/info-hub-main.c
     InformationHubComponent,
     HeroInfoHubComponent,
     InfoHubMainComponent,
+    PackagesComponent,
+    PackagesMainComponent,
+    HeroPackagesComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
 import { InformationHubComponent } from './pages/information-hub/information-hub.component';
+import { PackagesComponent } from './pages/packages/packages.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'services', component: ServicesComponent },
   { path: 'about-us', component: AboutUsPageComponent },
   { path: 'information-hub', component: InformationHubComponent },
+  { path: 'packages', component: PackagesComponent },
 ];
 
 @NgModule({
