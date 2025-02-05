@@ -8,6 +8,10 @@ declare var bootstrap: any;
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements AfterViewInit {
+  openGet() {
+    const url = '/services';
+    window.open(url, '_blank');
+  }
 
   ngAfterViewInit(): void {
     const carouselElement = document.getElementById('carouselExampleIndicators');
